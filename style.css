@@ -5,6 +5,7 @@
 .gradient-custom {
     /* fallback for old browsers */
     background: #6a11cb;
+    
 
     /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
@@ -12,7 +13,7 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
 
-    border: none;
+    border: none;   
 
 }
 
@@ -23,7 +24,7 @@
 }
 
 .gradient-text {
-    background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background-image: linear-gradient(to right, #12c2e9, #c471ed, #eb4ff670);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -33,7 +34,7 @@
 }
 
 .gradient-home {
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background-image: linear-gradient(to top, #fff1eb 0%, #acf9f864 100%);
     border: none;
 }
 
@@ -44,7 +45,7 @@
 
 .border-gradient {
     background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(45deg, #12c2e9, #f64f59) border-box;
+    linear-gradient(45deg, #12c2e97f, #f64f5a75) border-box;
     border: 5px solid transparent;
     border-radius: 50px;
 }
@@ -68,6 +69,7 @@
 }
 
 .home-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 7vw;
 }
 
