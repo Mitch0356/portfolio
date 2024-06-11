@@ -76,6 +76,8 @@
 .project-box {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2vw;
+    margin-top: 8em;
+    margin-bottom: 8em;
 }
 
 .gradient-secondary {
@@ -104,4 +106,10 @@
 .big-text
 {
     font-size: 100px!important;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
