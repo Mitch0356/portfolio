@@ -50,6 +50,12 @@
                             Spotify
                         </button>
                     </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-reset" id="ai-tab" data-bs-toggle="tab" data-bs-target="#ai"
+                            type="button" role="tab" aria-controls="messages" aria-selected="false">
+                            AI
+                        </button>
+                    </li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -125,9 +131,7 @@
 
                                 </div>
                                 <div class="col-md-4" id="content-container">
-
                                 </div>
-
                             </div>
                         </div>
 
@@ -140,7 +144,48 @@
                             loading="lazy"
                             class="mt-3"></iframe>
                     </div>
+                    <div class="tab-pane" id="ai" role="tabpanel" aria-labelledby="ai-tab">
+                        <h3 class="text-center mt-3">AI</h3>
+                        <p>Tijdens de Minor hebben we ook lessen gehad over AI en de ontwikkeling hiervan. Na deze lessen heb ik zelf wat lopen experimenteren wat AI toepassingen.
+                            Persoonlijk heb ik wat experimenten gedaan met Stable Diffusion. Met stable diffusion kan je plaatjes generen op basis van een prompt.
+                        </p>
+                        <p>
+                            Ik heb gebruik gemaakt van <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a>. Specifiek voor de M-Series Macs. Hieronder staan een paar voorbeelden van wat uitkomsten kunnen zijn. Doormiddel van <a>prompt engineering</a> heb ik geprobeer om een zo goed mogelijk plaatje te kunnen generen.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img
+                                    src="images/sd-1.png"
+                                    class="img-fluid rounded-top"
+                                    alt=""
+                                />
+                                <small class="text-muted">Positive prompt: <code>A man performing a job in smart industries</code></small><br>
+                                <small class="text-muted">Negative prompt: <code>-</code></small>    
+                            </div>
+                            <div class="col-md-4">
+                                <img
+                                src="images/sd-2.png"
+                                class="img-fluid rounded-top"
+                                alt=""
+                            />
+                            <small class="text-muted">Positive prompt: <code>photorealistic picture of a man performing a job in smart industries, detailed</code></small><br>
+                            <small class="text-muted">Negative prompt: <code>misformed hands, unrealistic, misformed limbs</code></small>    
+                            </div>
+                            <div class="col-md-4">
+                                <img
+                                src="images/sd-3.png"
+                                class="img-fluid rounded-top"
+                                alt=""
+                            />
+                            <small class="text-muted">Positive prompt: <code>photorealistic picture of a man performing a job in smart industries, detailed, lora:detail_slider_v4:3</code></small><br>
+                            <small class="text-muted">Negative prompt: <code> FastNegativeV2</code></small>    
+                            </div>
+                        </div>
+                        <p class="mt-2">Doormiddel van slim om te gaan met prompts, en als laatst LORA's en Embeddings toe te passen, kan je zien hoe een foto van details en realisme veranderd. </p>
+                    </div>
+                    
                 </div>
+                
 
             </div>
         </div>
